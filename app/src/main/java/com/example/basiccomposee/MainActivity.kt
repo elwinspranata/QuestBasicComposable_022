@@ -67,6 +67,13 @@ fun GreetingPreview(elwin: Modifier = Modifier){
             modifier = Modifier.size(250.dp)
         )
 
+        Text(
+            text = "Nama",
+            fontSize = 30.sp,
+            color = Color.Blue,
+            fontWeight = FontWeight.Bold
+        )
+
     BasicComposeeTheme {
         Greeting("Android")
     }
