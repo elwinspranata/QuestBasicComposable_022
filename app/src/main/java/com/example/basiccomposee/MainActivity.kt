@@ -31,9 +31,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             BasicComposeeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    GreetingPreview(
+
+                        elwin = Modifier.padding(innerPadding)
                     )
                 }
             }
@@ -41,11 +41,12 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview(elwin: Modifier = Modifier){
+fun GreetingPreview(elwin: Modifier = Modifier) {
     Column(
-        verticalArrangement =  Arrangement.Center,
+        verticalArrangement = Arrangement.Center,
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
@@ -64,7 +65,7 @@ fun GreetingPreview(elwin: Modifier = Modifier){
 
 
         Image(
-            painter = painterResource(id = R.drawable.madrid),
+            painter = painterResource(id = R.drawable.Real),
             contentDescription = null,
             modifier = Modifier.size(250.dp)
         )
@@ -91,11 +92,12 @@ fun GreetingPreview(elwin: Modifier = Modifier){
         )
 
         Image(
-            painter = painterResource(id = R.drawable.mamat),
+            painter = painterResource(id = R.drawable.alkatiri),
             contentDescription = null,
             modifier = Modifier.size(350.dp)
         )
     }
+}
 
 
     @Composable
@@ -103,10 +105,17 @@ fun GreetingPreview(elwin: Modifier = Modifier){
         Text(
             text = "Hello $name!",
             modifier = modifier
+        )
+    }
 
 
 
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
     BasicComposeeTheme {
         Greeting("Android")
     }
 }
+
