@@ -81,6 +81,13 @@ fun GreetingPreview(elwin: Modifier = Modifier){
             fontFamily = FontFamily.Default
         )
 
+        Text(
+            text = "20220140022",
+            fontSize = 25.sp,
+            color = Color.Black,
+            fontWeight = FontWeight.Bold
+        )
+
     BasicComposeeTheme {
         Greeting("Android")
     }
