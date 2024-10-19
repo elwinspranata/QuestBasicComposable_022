@@ -48,13 +48,15 @@ fun GreetingPreview(elwin: Modifier = Modifier){
         verticalArrangement =  Arrangement.Center,
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
-    ){
-        Text(text = "LOGIN", modifier = elwin,
+    ) {
+        Text(
+            text = "LOGIN", modifier = elwin,
             fontSize = 40.sp,
             color = Color.Blue,
             fontWeight = FontWeight.Bold
         )
-        Text(text = "King Madrid",
+        Text(
+            text = "King Madrid",
             fontSize = 25.sp,
             color = Color.Blue,
             fontFamily = FontFamily.Serif
@@ -87,6 +89,14 @@ fun GreetingPreview(elwin: Modifier = Modifier){
             color = Color.Black,
             fontWeight = FontWeight.Bold
         )
+
+        Image(
+            painter = painterResource(id = R.drawable.mamat),
+            contentDescription = null,
+            modifier = Modifier.size(350.dp)
+        )
+    }
+
 
     BasicComposeeTheme {
         Greeting("Android")
