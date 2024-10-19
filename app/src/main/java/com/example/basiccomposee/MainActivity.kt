@@ -65,7 +65,7 @@ fun GreetingPreview(elwin: Modifier = Modifier) {
 
 
         Image(
-            painter = painterResource(id = R.drawable.Real),
+            painter = painterResource(id = R.drawable.real),
             contentDescription = null,
             modifier = Modifier.size(250.dp)
         )
@@ -115,7 +115,7 @@ fun GreetingPreview(elwin: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     BasicComposeeTheme {
-        Greeting("Android")
+        GreetingPreview()
     }
 }
 
