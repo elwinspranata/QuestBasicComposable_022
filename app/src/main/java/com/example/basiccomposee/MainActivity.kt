@@ -98,6 +98,14 @@ fun GreetingPreview(elwin: Modifier = Modifier){
     }
 
 
+    @Composable
+    fun Greeting(name: String, modifier: Modifier = Modifier) {
+        Text(
+            text = "Hello $name!",
+            modifier = modifier
+
+
+
     BasicComposeeTheme {
         Greeting("Android")
     }
