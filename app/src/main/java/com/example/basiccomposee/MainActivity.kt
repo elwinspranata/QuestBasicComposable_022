@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
@@ -49,7 +50,11 @@ fun GreetingPreview(elwin: Modifier = Modifier){
             color = Color.Blue,
             fontWeight = FontWeight.Bold
         )
-
+        Text(text = "King Madrid",
+            fontSize = 25.sp,
+            color = Color.Blue,
+            fontFamily = FontFamily.Serif
+        )
 
     BasicComposeeTheme {
         Greeting("Android")
